@@ -10,7 +10,11 @@ $(BIN):
 
 .PHONY: run
 run: ## Run applications
-	go run cmd/kul/main.go
+	go run main.go
+
+.PHONY: build
+build: ## Build cli
+	go build -o kul main.go
 
 .PHONY: mod
 mod: ## Download modules
