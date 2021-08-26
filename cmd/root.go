@@ -12,7 +12,7 @@ var cfgFile string
 
 var rootCmd = &cobra.Command{
 	Use:   "kul",
-	Short: "Utility tools CLI",
+	Short: "utility tools cli",
 }
 
 func Execute() {

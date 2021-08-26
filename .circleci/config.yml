@@ -4,7 +4,7 @@ executors:
   go:
     working_directory: ~/app
     docker:
-      - image: cimg/go:1.16
+      - image: cimg/go:1.17
     resource_class: small
 
 jobs:

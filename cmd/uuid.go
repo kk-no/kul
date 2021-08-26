@@ -10,7 +10,7 @@ import (
 
 var uuidCmd = &cobra.Command{
 	Use:   "uuid",
-	Short: "Generate UUID string",
+	Short: "generate UUID string",
 	Run: func(cmd *cobra.Command, args []string) {
 		isUpper, _ := cmd.Flags().GetBool("upper")
 		uid := generateUUID(isUpper)
@@ -20,7 +20,7 @@ var uuidCmd = &cobra.Command{
 
 func init() {
 	rootCmd.AddCommand(uuidCmd)
-	uuidCmd.Flags().BoolP("upper", "u", false, "Upper case generate")
+	uuidCmd.Flags().BoolP("upper", "u", false, "upper case uuid generate")
 }
 
 func generateUUID(isUpper bool) string {

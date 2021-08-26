@@ -9,12 +9,12 @@ import (
 
 var base64Cmd = &cobra.Command{
 	Use:   "base",
-	Short: "Base64 encode/decode tools",
+	Short: "base64 encode/decode tools",
 }
 
 var base64EncodeCmd = &cobra.Command{
 	Use:   "encode",
-	Short: "Base64 encoder",
+	Short: "base64 encoder",
 	Args:  cobra.RangeArgs(1, 1),
 	Run: func(cmd *cobra.Command, args []string) {
 		str := args[0]
