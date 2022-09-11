@@ -1,5 +1,7 @@
 run:
   timeout: 3m
+  skip-dirs:
+    - template
 
 linters:
   enable:
@@ -7,7 +9,7 @@ linters:
     - gosimple
     - govet
     - staticcheck
+    - typecheck
     - unused
     - gofmt
-    - golint
   disable-all: true
