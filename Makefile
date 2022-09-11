@@ -26,7 +26,7 @@ test: ## Run unit test
 
 # golangci-lint setting
 GOLANGCLI_LINT := $(BIN)/golangci-lint
-GOLANGCLI_LINT_VERSION := v1.39.0
+GOLANGCLI_LINT_VERSION := v1.48.0
 $(GOLANGCLI_LINT): | $(BIN)
 	@curl -sSfL "https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh" | sh -s -- -b $(BIN) $(GOLANGCLI_LINT_VERSION)
 	@chmod +x "$(BIN)/golangci-lint"
